@@ -49,7 +49,7 @@ a {
 h1 {
 	transform: rotateZ(-7deg);
 	text-shadow: -3px -1px 1px rgb(30,242,241) , 3px 1px 1px rgb(246,5,10) ;
-	overflow: scroll;
+	overflow: hidden;
     overflow-x: hidden;
 	-webkit-box-sizing: content-box;
   	-moz-box-sizing: content-box;
