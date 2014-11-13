@@ -192,8 +192,8 @@ var Grid = (function() {
 		// default settings
 		settings = {
 			minHeight : 500,
-			speed : 350,
-			easing : 'ease'
+			speed : 500,
+			easing : 'linear'
 		};
 
 	function init( config ) {
@@ -405,7 +405,7 @@ var Grid = (function() {
 					if( $img.attr( 'src' ) === self.$item.children('a').data( 'largesrc' ) ) {
 						self.$loading.hide();
 						self.$fullimage.find( 'img' ).remove();
-						self.$largeImg = $img.fadeIn( 350 );
+						self.$largeImg = $img.fadeIn( 450 );
 						self.$fullimage.append( self.$largeImg );
 					}
 				} ).attr( 'src', eldata.largesrc );	

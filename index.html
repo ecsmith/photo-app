@@ -1,67 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>erchsm</title>
-		<meta name="description" content="Thumbnail Grid with Expanding Preview" />
-		<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
-		<link href=favicon.ico rel="shortcut icon" />
-		<link rel="stylesheet" type="text/css" href="css/default.css"/>
-		<link rel="stylesheet" type="text/css" href="css/component.css"/>
-		<link rel="stylesheet" href="css/animate.css">
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script>
- 			new WOW().init();
-		</script>
-	</head>
-	<body>
-		<div class="container">	
-			<!-- Codrops top bar -->
-			<div class="wow fadeInDown">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>erchsm</title>
+	<meta name="description" content="Thumbnail Grid with Expanding Preview" />
+	<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
+	<link href=favicon.ico rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="container">
+	<!-- Codrops top bar -->
+	<div class="wow fadeInDown">
 			<div class="codrops-top clearfix">
 				<a href="mailto:software.ecs@gmail.com"><strong>&hearts; email me</strong></a>
-				<span class="right">
-					<a href="tel:508-733-4510"><strong>&hearts; call me</strong></a>
-				</span>
+					<span class="right">
+						<a href="tel:508-733-4510"><strong>&hearts; call me</strong></a>
+					</span>
 			</div><!--/ Codrops top bar -->
-			</div>
- 			<header class="clearfix">
- 				<div class="box">
-				<h1>Eric<br>Smith</h1>
-				</div>
-				<span>photos &bull;glitchyness &bull;fun</span>
- 			</header>
- 			<div class="wow fadeInUp">
-			<div class="main">
-				<ul id="og-grid" class="og-grid">
-					<li>
-						<a href="" data-largesrc="images/4.jpg" data-title="Ferns at Muir Woods. Marin County, CA." data-description="Sept. 2014">
-							<img src="images/thumbs/4.jpg" alt="img04"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/5.jpg" data-title="The Surf at Twin Lakes Beach. Santa Cruz, CA." data-description="July 2014">
-							<img src="images/thumbs/5.jpg" alt="img05"/>
-						</a>
-					</li>
-					<li>
-						<a href="" data-largesrc="images/6.jpg" data-title="Fountain at Golden Gate Park. San Francisco, CA." data-description="June 2014">
-							<img src="images/thumbs/6.jpg" alt="img06"/>
-						</a>
-					</li>
-				</ul>
-			</div>
-			</div>
-		</div><!-- /container -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/grid.js"></script>
-		<script>
-			$(function() {
-				Grid.init();
-			});
-		</script>
-	</body>
+	</div>
+	<header class="clearfix">
+		<div class="box">
+			<h1>Eric<br>Smith</h1>
+		</div>
+		<span><strong>&utrif;&#09;photos&#09;     &utrif;&#09;code&#09;     &utrif;&#09;glitches</strong></span>
+		<!--<span><strong>&block; photos&#09;&block; code&#09;&block; glitches</strong></span>-->
+		<!--<span><strong>&ultri;photos&#09;&ultri;code&#09;&ultri;glitches</strong></span>-->
+
+	</header>
+	<div class="wow fadeInUp">
+		<div class="main">
+			<ul id="og-grid" class="og-grid">
+				<li>
+					<a href="" data-largesrc="images/4.jpg" data-title="Ferns at Muir Woods. Marin County, CA." data-description="Sept. 2014">
+						<img src="images/thumbs/4.jpg" alt="img04"/>
+					</a>
+				</li>
+				<li>
+					<a href="" data-largesrc="images/6.jpg" data-title="Fountain at Golden Gate Park. San Francisco, CA." data-description="June 2014">
+						<img src="images/thumbs/6.jpg" alt="img06"/>
+					</a>
+				</li>
+				<li>
+					<a href="" data-largesrc="images/5.jpg" data-title="The Surf at Twin Lakes Beach. Santa Cruz, CA." data-description="July 2014">
+						<img src="images/thumbs/5.jpg" alt="img05"/>
+					</a>
+				</li>
+				<li>
+					<a href="" data-largesrc="images/9.jpg" data-title="Sam on the Porch. Amherst, MA." data-description="Jan 2013">
+						<img src="images/thumbs/9.jpg" alt="img09"/>
+					</a>
+				</li>
+				<li>
+					<a href="" data-largesrc="images/7.jpg" data-title="Emma at Dolores Park. San Francisco, CA." data-description="Sept 2014">
+						<img src="images/thumbs/7.jpg" alt="img07"/>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div><!-- /container -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/grid.js"></script>
+<script>
+	$(function() {
+		Grid.init();
+	});
+</script>
+<div class="fb-comments" data-href="http://erchsm.me" data-width="100%" data-numposts="7" data-colorscheme="dark"></div>
+</body>
 </html>

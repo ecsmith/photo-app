@@ -1,6 +1,6 @@
-/* General Demo Style */
 @import url(http://fonts.googleapis.com/css?family=Pacifico&effect=shadow-multiple);
-@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch);
+
 /*@font-face {
 	font-family: Lakesight;
 	src: url("fonts/Lakesight.ttf") format("truetype");
@@ -18,7 +18,11 @@ html { height: 100%; }
 	margin: 0;
 }
 
-/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/*
+Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -33,47 +37,62 @@ html { height: 100%; }
     *zoom: 1;
 }
 
+/*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+
 body {
-	font-family: 'Pacifico', cursive; 
+	font-family: 'Cabin Sketch', bold;
 	background: #f9f9f9;
 	font-weight: 300;
-    color: #333;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.9);
+	color: #333;
 }
 
 a {
-	font-family: 'Special Elite', cursive;
+	font-family: 'Cabin Sketch', cursive;
+	text-shadow: -2px -2px 2px rgba(255,255,255,0.1);
 	color: #555;
 	text-decoration: none;
 }
 
 h1 {
-	transform: rotateZ(-7deg);
-	text-shadow: -3px -1px 1px rgb(30,242,241) , 3px 1px 1px rgb(246,5,10) ;
+	font-family: 'Pacifico', cursive;
+	transform: rotateZ(-9.7082039325deg);
+	/*transform: rotateY(-8.09016994375deg);*/
+	text-shadow: -1px -1px 1px rgb(20,241,241) , 1px 1px 1px rgb(246,5,10) ;
 	overflow: hidden;
     overflow-x: hidden;
 	-webkit-box-sizing: content-box;
   	-moz-box-sizing: content-box;
   	box-sizing: content-box;
   	border: none;
+	color: #555;
 	/*color: rgb(51, 51, 51);
   	*/-o-text-overflow: clip;
   	text-overflow: clip;
-  	padding: 15%;
+	padding: 15%;
+  	z-index: 999;
 }
 
  .box {
 	border: solid 2px #555;
 	background: rgba(255, 255, 255, 0.5);
-	padding: 0px 9% 10px 0px;
-	margin: 4px 4px 0px 4px;
-	float:center;
-	box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
+	padding: 0px 10px 10px 0px;
+	 /*padding: 0px 10px 10px 0px;*/
+	 margin: 4px 4px 0px 4px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
 }
 
 .container h1:hover {
-	background: rgba(255, 255, 255, 0.1);
-	color: #000;
-	box-shadow: 0px 0px 1px rgba(30,242,241,0.1);
+	background: rgba(255, 255, 255, 0.2);
+	text-shadow: -1px -1px 1px rgb(20,217,217) , 1px 1px 1px rgb(255,38,38) ;
+	color: #111;
+	/*box-shadow: 0px 0px 1px rgba(255,255,255,0.1);*/
+	/*background: rgba(255, 255, 255, 0.2);*/
+	/*color: #555;*/
+	/*text-shadow: -3px -3px 3px rgb(20,241,241) , -10px 4px -10px rgb(246,5,10);*/
+	/*box-shadow: 0px 0px 1px rgba(255,255,255,0.1);*/
 }
 
 
@@ -83,26 +102,35 @@ h1 {
 }
 
 .container > header {
-	width: 100%;
-	max-width: 220px;
+	width: 100vw;
+	max-width: 220px;/*220px;*/
 	margin: 0 auto;
 	position: relative;
 	padding: 15% 30px 10% 30px;
 	text-align: center;
 }
 
-.container > header h1 {
-	font-size: 34px;
+/*.container > header h1 {*/
+	/*font-size: 5vw;*/
+	/*line-height: 40px;*/
+	/*margin: 0 auto;*/
+	/*font-weight: 700;*/
+	/*color: #333;*/
+/*}*/
+
+.box > h1 {
+	font-size: 210%;
 	line-height: 40px;
 	margin: 0 auto;
-	font-weight: 700;
+	font-weight: 100;
 	color: #333;
 }
 
-.container > header h1 span {
-	display: block;
-	font-size: 20px;
-	font-weight: 300;
+.container > header span {
+	display: inline;
+	/*font-stretch: inherit;*/
+	font-size: 1.5vh;
+	font-weight: 900;
 }
 
 .main > p {
