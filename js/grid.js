@@ -193,7 +193,7 @@ var Grid = (function() {
 		settings = {
 			minHeight : 500,
 			speed : 500,
-			easing : 'linear'
+			easing : 'ease'
 		};
 
 	function init( config ) {
@@ -342,7 +342,7 @@ var Grid = (function() {
 	Preview.prototype = {
 		create : function() {
 			// create Preview structure:
-			this.$title = $( '<h3></h3>' );
+			this.$title = $( '<p></p>' );
 			this.$description = $( '<p></p>' );
 			this.$href = $( '<a href="#">Visit website</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
@@ -405,7 +405,7 @@ var Grid = (function() {
 					if( $img.attr( 'src' ) === self.$item.children('a').data( 'largesrc' ) ) {
 						self.$loading.hide();
 						self.$fullimage.find( 'img' ).remove();
-						self.$largeImg = $img.fadeIn( 450 );
+						self.$largeImg = $img.fadeIn( 100 );
 						self.$fullimage.append( self.$largeImg );
 					}
 				} ).attr( 'src', eldata.largesrc );	

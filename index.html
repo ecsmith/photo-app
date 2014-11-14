@@ -4,9 +4,9 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>erchsm</title>
-	<meta name="description" content="Thumbnail Grid with Expanding Preview" />
-	<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, expanding, preview, portfolio" />
+	<title>erchsm.me ~ &hearts</title>
+	<meta name="description" content="~&hearts;" />
+	<meta name="keywords" content="thumbnails, grid, preview, google image search, jquery, image grid, preview, portfolio, Eric Smith, Eric, Smith" />
 	<link href=favicon.ico rel="shortcut icon" />
 	<link rel="stylesheet" type="text/css" href="css/default.css"/>
 	<link rel="stylesheet" type="text/css" href="css/component.css"/>
@@ -19,24 +19,34 @@
 </head>
 <body>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-	fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : 'your-app-id',
+			xfbml      : true,
+			version    : 'v2.1'
+		});
+	};
+
+	(function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "http://connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
 </script>
 <div class="container">
-	<!-- Codrops top bar -->
-	<div class="wow fadeInDown">
+	<!-- top bar -->
+	<div class="wow fadeInDown" animated>
 			<div class="codrops-top clearfix">
-				<a href="mailto:software.ecs@gmail.com"><strong>&hearts; email me</strong></a>
-					<span class="right">
-						<a href="tel:508-733-4510"><strong>&hearts; call me</strong></a>
-					</span>
-			</div><!--/ Codrops top bar -->
+				<a href="https://github.com/ecsmith"><strong>&hearts; my github</strong></a>
+				<span class="right">
+					<a href="mailto:software.ecs@gmail.com"><strong>&hearts; email me</strong></a>
+				</span>
+			</div>
 	</div>
+	<!-- top bar -->
 	<header class="clearfix">
 		<div class="box">
 			<h1>Eric<br>Smith</h1>
@@ -64,20 +74,25 @@
 						<img src="images/thumbs/5.jpg" alt="img05"/>
 					</a>
 				</li>
-				<li>
-					<a href="" data-largesrc="images/9.jpg" data-title="Sam on the Porch. Amherst, MA." data-description="Jan 2013">
-						<img src="images/thumbs/9.jpg" alt="img09"/>
-					</a>
-				</li>
-				<li>
-					<a href="" data-largesrc="images/7.jpg" data-title="Emma at Dolores Park. San Francisco, CA." data-description="Sept 2014">
-						<img src="images/thumbs/7.jpg" alt="img07"/>
-					</a>
-				</li>
+				<!--<li>-->
+					<!--<a href="" data-largesrc="images/9.jpg" data-title="Sam on the Porch. Amherst, MA." data-description="Jan 2013">-->
+						<!--<img src="images/thumbs/9.jpg" alt="img09"/>-->
+					<!--</a>-->
+				<!--</li>-->
+				<!--<li>-->
+					<!--<a href="" data-largesrc="images/7.jpg" data-title="Emma at Dolores Park. San Francisco, CA." data-description="Sept 2014">-->
+						<!--<img src="images/thumbs/7.jpg" alt="img07"/>-->
+					<!--</a>-->
+				<!--</li>-->
 			</ul>
 		</div>
 	</div>
 </div><!-- /container -->
+<div class="wow fadeInUp">
+	<div class="codrops-bottom">
+		<div class="fb-comments" data-href="http://erchsm.me" data-width="100%" data-numposts="7" data-colorscheme="light"></div>
+	</div>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/grid.js"></script>
 <script>
@@ -85,6 +100,5 @@
 		Grid.init();
 	});
 </script>
-<div class="fb-comments" data-href="http://erchsm.me" data-width="100%" data-numposts="7" data-colorscheme="dark"></div>
 </body>
 </html>
