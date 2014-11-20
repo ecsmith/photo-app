@@ -68,23 +68,24 @@ h1 {
   	box-sizing: content-box;
   	border: none;
 	color: #555;
-	/*color: rgb(51, 51, 51);
-  	*/-o-text-overflow: clip;
+	/*color: rgb(51, 51, 51);*/
+  	-o-text-overflow: clip;
   	text-overflow: clip;
 	padding: 15%;
   	z-index: 999;
 }
 
  .box {
-	border: solid 2px #555;
-	background: rgba(255, 255, 255, 0.5);
-	padding: 0px 10px 10px 0px;
+	border: double 6px #555;
+	/*border: double 3px rgb(20, 217, 217);*/
+	background: rgba(255, 255, 255, 0.9);
+	padding: 0px 10px 15px 0px;
 	 /*padding: 0px 10px 10px 0px;*/
 	 margin: 4px 4px 0px 4px;
 	box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
 }
 
-.header h1:hover {
+h1:hover {
 	background: rgba(255, 255, 255, 0.2);
 	text-shadow: -1px -1px 1px rgb(20,217,217) , 1px 1px 1px rgb(255,38,38) ;
 	color: #111;
@@ -136,10 +137,21 @@ header {
 
 }
 
+header > span {
+	font-size: 1.2vh;
+	display: inline-block;
+	text-align: left;
+	font-weight: 900;
+	color: #f9f9f9;
+	text-shadow: 1px 3px 1px rgba(0,0,0,0.9);
+	text-shadow: -1px -2px 1px rgb(20,241,241) , 1px -3px 1px rgb(246,5,10) ;
+}
+
 .container > header span {
-	display: inline;
+	font-size: 90%;
+	display: inline-block;
 	/*font-stretch: inherit;*/
-	font-size: 1.5vh;
+	/*font-size: 10px;*/
 	font-weight: 900;
 }
 
@@ -156,7 +168,7 @@ header {
 	background: rgba(255, 255, 255, 0.5);
 	z-index: 9999;
 	position: relative;
-	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 0px 9999px rgba(0,0,0,0.2);
 }
 
 .codrops-top a {
@@ -180,11 +192,17 @@ header {
 	display: block;
 }
 .codrops-bottom {
-	line-height: 25px;
-	font-size: 11px;
+	/*line-height: 25px;*/
 	background: #fff;
 	background: rgba(255, 255, 255, 0.5);
 	z-index: 9999;
 	position: relative;
-	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 0px 3px rgba(0,0,0,0.2);
+}
+.codrops-bottom span.center {
+	float: inherit;
+}
+
+.codrops-bottom  img {
+	padding: 5px 2px 5px;
 }
