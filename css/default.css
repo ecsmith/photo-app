@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Pacifico&effect=shadow-multiple);
+@import url(http://fonts.googleapis.com/css?family=Arimo);
 @import url(http://fonts.googleapis.com/css?family=Cabin+Sketch);
+@import url(http://fonts.googleapis.com/css?family=Chewy);
 
 /*
 Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/
@@ -43,24 +45,24 @@ html {
 }
 
 body {
-	font-family: 'Cabin Sketch', bold;
+	font-family: 'Arimo', cursive;
 	background: #f9f9f9;
-	font-weight: 300;
+	font-weight: 100;
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.9);
-	color: #333;
+	color: #666;
 }
 
 a {
-	font-family: 'Cabin Sketch', cursive;
+	font-family: 'Chewy', bold;
 	text-shadow: -2px -2px 2px rgba(255,255,255,0.1);
-	color: #555;
+	color: #666;
 	text-decoration: none;
 }
 
 h1 {
 	font-family: 'Pacifico', cursive;
 	transform: rotateZ(-9.7082039325deg);
-	text-shadow: -1px -1px 1px rgb(20,241,241) , 1px 1px 1px rgb(246,5,10) ;
+	text-shadow: 1px 0px 1px rgb(20,241,241) , -1px 0px 1px rgb(246,5,10) ;
 	overflow: hidden;
     overflow-x: hidden;
 	-webkit-box-sizing: content-box;
@@ -76,17 +78,18 @@ h1 {
 }
 
  .box {
-	border: solid 2px #555;
+	border: solid 2px #666;
 	background: rgba(255, 255, 255, 0.5);
-	padding: 0px 10px 10px 0px;
+	padding: 0px 4% 9% 0px;
 	 /*padding: 0px 10px 10px 0px;*/
 	 margin: 4px 4px 0px 4px;
-	box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+	 box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	 /*box-shadow: 2px 2px 2px rgba(0,0,0,0.1);*/
 }
 
 .container h1:hover {
 	background: rgba(255, 255, 255, 0.2);
-	text-shadow: -1px -1px 1px rgb(20,217,217) , 1px 1px 1px rgb(255,38,38) ;
+	text-shadow: 1px 0px 1px rgb(20,217,217) , -1px 0px 1px rgb(255,38,38) ;
 	color: #111;
 	/*box-shadow: 0px 0px 1px rgba(255,255,255,0.1);*/
 	/*background: rgba(255, 255, 255, 0.2);*/
@@ -150,7 +153,7 @@ header {
 
 /* Header Style */
 .codrops-top {
-	line-height: 24px;
+	line-height: 20px;
 	font-size: 11px;
 	background: #fff;
 	background: rgba(255, 255, 255, 0.5);
@@ -167,8 +170,9 @@ header {
 }
 
 .codrops-top a:hover {
-	background: rgba(255,255,255,0.5);
+	background: rgba(255, 255, 255, 0.5);
 	color: #666;
+	text-decoration: line-through;
 }
 
 .codrops-top span.right {
