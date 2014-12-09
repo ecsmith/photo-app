@@ -1,6 +1,6 @@
 .og-grid {
 	list-style: none;
-	padding: 20px 0;
+	padding: 15% 0;
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
@@ -8,7 +8,7 @@
 
 .og-grid li {
 	display: inline-block;
-	margin: 10px 5px 0 5px;
+	margin: 10px 5px 0 10px;
 	vertical-align: top;
 	height: auto ;
 }
@@ -30,22 +30,22 @@
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #666;
+	border-bottom-color: #333;
 	border-width: 15px;
-	left: 50%;
-	margin: -20px 0 0 -15px;
+	left: 10%;
+	margin: -13px 0 0 -14px;
 }
 
 .og-expander {
-	border-color: #666;
+	border-color: #333;
 	border-style: solid; 
-	border-width: 2px 0;
+	border-width: 3px 0;
 	position: absolute;
 	background: #f9f9f9;
 	top: auto;
 	left: 0;
 	width: 100%;
-	margin-top: 10px;
+	margin-top: 17px;
 	text-align: center;
 	height: 0;
 	overflow: hidden;
@@ -53,7 +53,7 @@
 }
 
 .og-expander-inner {
-	padding: 50px 30px;
+	padding: 30px 30px;
 	height: 100%;
 }
 
@@ -70,10 +70,10 @@
 .og-close::after {
 	content: '';
 	position: absolute;
-	width: 100%;
-	top: 50%;
-	height: 1px;
-	background: #888;
+	width: 70%;
+	top: 40%;
+	height: 2px;
+	background: #333;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	transform: rotate(45deg);
@@ -87,7 +87,7 @@
 
 .og-close:hover::before,
 .og-close:hover::after {
-	background: #333;
+	background: #111;
 }
 
 .og-fullimg,
