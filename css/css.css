@@ -1,0 +1,465 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico&effect=shadow-multiple);
+
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+
+@import url(http://fonts.googleapis.com/css?family=VT323);
+
+@import url(http://fonts.googleapis.com/css?family=Chewy);
+
+@import url(http://fonts.googleapis.com/css?family=Creepster);
+
+@import url(http://fonts.googleapis.com/css?family=Megrim);
+
+@import url(http://fonts.googleapis.com/css?family=Contrail+One);
+
+
+/*
+Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+html {
+    height: 100%;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* setup the very basis for the document */
+body {
+    text-align: left;
+	font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    background: #f6f6f6;
+    /*max-width: 90%;*/
+    margin: 0 auto;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.9);
+}
+header {
+	max-width: 300px;/*220px;*/
+	margin: 0 auto;
+	position: relative;
+	padding: 10% 0px 15% 30px;
+	text-align: center;
+    border-bottom-color: #111;
+    border-width: 12px;
+}
+img:hover{
+    background: #111;
+    cursor: pointer;
+}
+a {
+	text-shadow: -2px -2px 2px rgba(255,255,255,0.1);
+    color: #666;
+    text-decoration: none;
+}
+.container {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+/*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+.ribbon {
+	display: inline-block;
+    font-size: 11px !important;
+	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+    line-height: 22px;
+    width: 100%;
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.3);
+    position: relative;
+    background: #FFF;
+    text-align: left;
+    margin: 2em auto 3em;
+ /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */;
+}
+
+.ribbon:before, .ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.0em solid #999;
+    z-index: -1;
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+}
+
+.ribbon:before {
+    left: -1.5em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+
+.ribbon:after {
+    right: -1.5em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+    bottom: -1em;
+}
+
+.ribbon .ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
+.ribbon a {
+    display: inline-block;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+.ribbon span {
+    margin: auto 10%;
+    letter-spacing: 2px;
+    color: #666;
+}
+
+.ribbon a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #666;
+    cursor: pointer;
+}
+
+.ribbon-stitches-top {
+    /*margin-top: 1px;*/
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    /*-moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);*/
+    /*-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);*/
+    /*box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);*/
+}
+/*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+/* ANIMATION TRANSITION IF NEEDED */
+.animate {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+/* GRID ELEMENTS */
+.og-grid {
+    list-style: none;
+    padding: 10% 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.og-grid li {
+    display: inline-block;
+    margin: 10px 5px 0 5px;
+    vertical-align: top;
+    height: auto;
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+    border: none;
+    outline: none;
+    display: block;
+    position: relative;
+}
+
+.og-grid li.og-expanded > a::after {
+    top: auto;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #111;
+    border-width: 12px;
+    left: 10%;
+    margin: -12px 0 0 -12px;
+}
+
+.og-expander {
+    border-color: #333;
+    border-style: solid;
+    border-width: 3px 0;
+    position: absolute;
+    background: #f9f9f9;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+}
+
+.og-expander-inner {
+    padding: 10px 20px;
+    height: 100%;
+}
+
+.og-close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    height: 1px;
+    background: #888;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.og-close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+    background: #333;
+}
+
+.og-fullimg,
+.og-details {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.og-fullimg {
+    width: 100%;
+}
+
+.og-details {
+    padding: 0;
+}
+
+.og-fullimg {
+    text-align: center;
+}
+
+.og-fullimg img {
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.og-details h3 {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px 0;
+}
+
+.og-details p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #999;
+}
+
+.og-details a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: 3px solid #333;
+    display: inline-block;
+    margin: 30px 0 0;
+    outline: none;
+}
+
+.og-details a::before {
+    content: '\2192';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.og-details a:hover {
+    border-color: #999;
+    color: #999;
+}
+
+.og-loading {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ddd;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    -webkit-animation: loader 0.5s infinite ease-in-out both;
+    -moz-animation: loader 0.5s infinite ease-in-out both;
+    animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+    0% {
+        background: #ddd;
+    }
+
+    33% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+    }
+
+    66% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+    }
+}
+
+@-moz-keyframes loader {
+    0% {
+        background: #ddd;
+    }
+
+    33% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+    }
+
+    66% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+    }
+}
+
+@keyframes loader {
+    0% {
+        background: #ddd;
+    }
+
+    33% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd;
+    }
+
+    66% {
+        background: #ccc;
+        box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
+    }
+}
+
+/* IMAGE GALLERY */
+.previewImageContainer {
+    float: left;
+    display: inline-block;
+    height: auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.largepreviewImageContainer {
+    margin-top: 10px;
+}
+
+.largepreviewImageContainer, .largepreviewImageContainer .og-fullimg {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.largepreviewImageContainer .og-fullimg img {
+    height: 100%;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+.SmallPreviewImageContainer {
+    bottom: 0;
+    display: inline-block;
+    height: auto;
+    left: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.SmallPreviewImageContainer .SmallImage {
+    display: inline-block;
+    height: auto;
+    margin: 0 1% 0;
+    width: 32%;
+    max-width: 100px;
+    min-height: 73px;
+}
+
+.SmallPreviewImageContainer .SmallImage:first-child {
+    margin-left: 0;
+}
+
+.SmallPreviewImageContainer .SmallImage:last-child {
+    margin-right: 0;
+}
+
+.SmallPreviewImageContainer .thumb {
+    width: 100%;
+    height: auto;
+}
