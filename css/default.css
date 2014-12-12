@@ -44,7 +44,7 @@ html {
 
 body {
 	font-family: 'Cabin Sketch', bold;
-	background: #f9f9f9;
+	background: #E1EFF4;
 	font-weight: 300;
 	text-shadow: 1px 1px 1px rgba(255,255,255,0.9);
 	color: #333;
@@ -60,7 +60,7 @@ a {
 h1 {
 	font-family: 'Pacifico', cursive;
 	transform: rotateZ(-9.7082039325deg);
-	text-shadow: -1px -1px 1px rgb(20,241,241) , 1px 1px 1px rgb(246,5,10) ;
+	text-shadow: -1px -1px 1px rgb(244,44,60) , 1px 1px 1px rgb(2,235,216) ;
 	overflow: hidden;
     overflow-x: hidden;
 	-webkit-box-sizing: content-box;
@@ -164,18 +164,26 @@ header > span {
 .codrops-top {
 	line-height: 24px;
 	font-size: 11px;
-	background: #fff;
-	background: rgba(255, 255, 255, 0.5);
+	background: #333;
+	/*background: rgba(255, 255, 255, 0.5);*/
 	z-index: 9999;
 	position: relative;
 	box-shadow: 1px 0px 9999px rgba(0,0,0,0.2);
 }
 
 .codrops-top a {
+	font-style: italic;
 	padding: 0px 10px;
 	letter-spacing: 1px;
-	color: #333;
+	color: #f9f9f9;
 	display: inline-block;
+	/*font-size: 1.2vh;*/
+	text-align: left;
+	font-weight: 900;
+	/*color: #f9f9f9;*/
+	text-shadow: 1px 3px 1px rgba(0,0,0,0.9);
+	text-shadow: -1px -2px 1px rgb(20,241,241) , 1px -3px 1px rgb(246,5,10) ;
+
 }
 
 .codrops-top a:hover {
@@ -193,7 +201,7 @@ header > span {
 }
 .codrops-bottom {
 	/*line-height: 25px;*/
-	background: #fff;
+	background: #E1EFF4;
 	background: rgba(255, 255, 255, 0.5);
 	z-index: 9999;
 	position: relative;
